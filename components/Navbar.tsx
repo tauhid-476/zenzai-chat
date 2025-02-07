@@ -19,7 +19,7 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* User Button with custom theme */}
+          {/* signout Button */}
           <SignOutButton redirectUrl='/'>
             <button className='bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded'>
                 Log Out
