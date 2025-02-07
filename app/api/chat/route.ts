@@ -1,4 +1,3 @@
-import { auth, clerkClient } from "@clerk/nextjs/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -28,6 +27,7 @@ export async function POST(request: NextRequest) {
 
         return NextResponse.json({ response: text })
     } catch (error) {
+        console.log(error);
         return NextResponse.json(
             { error: "Failed to process your request" },
             { status: 500 }
