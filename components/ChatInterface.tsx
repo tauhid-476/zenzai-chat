@@ -66,7 +66,7 @@ export default function ChatInterface() {
   }, [messages, isLoading]);
 
   return (
-    <div className="flex flex-col h-screen max-h-screen overflow-hidden bg-gradient-to-br from-purple-950 via-black to-purple-900">
+    <div className="flex flex-col h-screen min-h-screen overflow-hidden bg-gradient-to-br from-purple-950 via-black to-purple-900">
       {/* Navbar */}
       <Navbar />
 
