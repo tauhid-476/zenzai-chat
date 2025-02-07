@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { SignOutButton, useUser } from "@clerk/nextjs";
+import {  useUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -9,7 +9,6 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Send, Loader2, Zap } from "lucide-react";
 import Navbar from "./Navbar";
-import Link from "next/link";
 
 interface Message {
     role: "user" | "assistant";
